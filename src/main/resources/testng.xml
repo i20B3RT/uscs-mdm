@@ -1,0 +1,73 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="eWM test cases" configfailurepolicy="continue" parallel="false" thread-count="5"><!---->
+    <listeners>
+        <listener class-name="com.uscold.mdm.conf.ScreenShootsListener" />
+        <listener class-name="com.uscold.mdm.conf.CustomHTMLReportListener" />
+    </listeners>
+    <test name="create customer">
+        <classes>
+            <class name="com.uscold.mdm.test.customers.ViewAllAndViewCreatedCustomersPageTest"/>
+            <class name="com.uscold.mdm.test.customers.CreateAndViewCreatedCustomerTest"/>
+        </classes>
+    </test>
+    <!--<test name="create product">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdm.test.product.CreateAndViewCreatedProductTest"/>-->
+            <!--<class name="com.uscold.mdm.test.product.UpdateAndViewCreatedProductTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="create location flow">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdm.test.location.CreateLocationAndRack"/>-->
+            <!--<class name="com.uscold.mdm.test.location.LocationRackTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="order maintenance">-->
+        <!--<classes>-->
+            <!--<class name="com.uscold.mdm.test.orders.ShipOrderInquiryTest"/>-->
+            <!--<class name="com.uscold.mdm.test.orders.ViewExistingOrderPage"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="common scenarios">
+        <classes>
+            <class name="com.uscold.mdm.test.ViewAllReceipts"/>
+        </classes>
+    </test>-->
+    <!--<test name="CreateUser">
+        <classes>
+            <class name="com.uscold.mdm.test.user.CreateUserTest"/>
+            <class name="com.uscold.mdm.test.ProductCRUDTest"/>
+        </classes>
+    </test>
+    <test name="CreateUpdateProduct">
+        <classes>
+            <class name="com.uscold.mdm.test.ProductCRUDTest"/>
+        </classes>
+    </test>-->
+    <!--<test name="CheckZoneMapForFortNorthTest">
+         <classes>
+             <class name="com.uscold.mdm.test.CheckZoneMapForFortNorthTest"/>
+             <class name="com.uscold.mdm.test.IncorrectModuleCheckTest"/>
+             <class name="com.uscold.mdm.test.customers.ViewAllAndViewCreatedCustomersPageTestustomersPageTest"/>
+         </classes>
+     </test>
+     <test name="Locations and Racks CRUD">
+         <parameter name="description" value="Perform basic CRUD operation in module Locations and Racks"/>
+         <classes>
+             <class name="com.uscold.mdm.test.location.LocationRackTest"/>
+         </classes>
+     </test>
+     <test name="TC_Ship_OrderInquiry_UI_02">
+         <parameter name="description" value="Verify the various Basic search input fields type and length in the Order Entry Inquiry/Maintenance landing page"/>
+         <classes>
+             <class name="com.uscold.mdm.test.orders.ShipOrderInquiryTest"/>
+         </classes>
+     </test>
+
+
+    <test name="view all receipts ">
+        <classes>
+            <class name="com.uscold.mdm.test.ViewAllReceipts"/>
+        </classes>
+    </test>-->
+</suite>
